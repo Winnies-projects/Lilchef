@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lilchef</title>
+    
+    <!-- Link to external stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header section -->
+    <header>
+        <div id="topsection">
+            <!-- Website title -->
+            <h1>Lil<span id="heading">chef</span></h1>
+            
+            <!-- Introduction text -->
+            <div id="intro">
+                <p>Welcome to LilChef! your culinary muse for those indecisive moments! 
+                    Simply visit our webpage, and LilChef will whisk you away on a flavorful journey with a random recipe, 
+                    adding excitement and inspiration to your everyday cooking.</p>
+            </div>
+
+            <input type="text" id="searchbar" placeholder="Search for those mouthwatering recipes!">
+
+            <button onclick="searchMeal()" id="searchClick">
+
+                <svg id="search" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                    <path d="M31 31L21 21M24.3333 12.6667C24.3333 19.11 19.11 24.3333 12.6667 24.3333C6.22335 24.3333 1 19.11 1 12.6667C1 6.22335 6.22335 1 12.6667 1C19.11 1 24.3333 6.22335 24.3333 12.6667Z" stroke="#4A5568" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+
+            </button>
+        </div>
+    </header>
+
+    <!-- Main content section -->
+    <main>
+        <h2>Your Random dish is...</h2>
+        
+        <!-- Container for random dish information -->
+        <div id="randomDishContainer">
+
+            <img src=" " id="randomImage">
+    
+            <div id="info">
+                <p id="randomname"> </p><br>
+                <p class="randomMeal">Type of meal: <span id="randomMealtype"> </span></p>
+                <p class="randomMeal">This meal is from: <span id="randomMealfrom"></span></p>
+                
+                <!-- Button to show ingredients modal -->
+                <button id="recipelist">Ingredients</button>
+            </div>
+        </div>
+        
+        <!-- Modal for displaying ingredients -->
+        <div id="recipecard" class="recipecard">
+            <div class="modal-content">
+                
+                <!-- Close button for the modal -->
+                <span class="close">
+                    <img id="closebtn" src="./icons/icons8-close-25.png">
+                </span>
+                
+                <!-- Container for displaying ingredients -->
+                <div id="ingredientsContainer">
+                    <h3>INGREDIENTS</h3>
+                    <p id="ingredients"> </p>
+                </div>
+            </div>
+        </div>
+    </main> 
+  
+    <!-- Container for displaying searched items -->
+    <div class="searcheditems"> 
+        <div class="meal-container" id="mealContainer"></div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
