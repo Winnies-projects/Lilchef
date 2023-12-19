@@ -328,13 +328,13 @@ button:hover{
         top: 150px;
         left: 10px;
         width: 200px;
-        height: 30px;
+        height: 35px;
 
     }
 
     #searchClick{
-        height: 30px;
-        width: 30px;
+        height: 35px;
+        width: 35px;
         position: absolute ;
         top: 150px;
         left: 240px;
@@ -402,7 +402,7 @@ button:hover{
     #recipelist{
         width: 120px;
         height: 40px;
-        margin-top: 27px;
+        margin-top: 15px;
         font-size: 10px;
         
     }
@@ -438,10 +438,4 @@ button:hover{
         font-size: 13px;
         padding: 10px;
     }
-    
-
-   
-    
-
-
 }
